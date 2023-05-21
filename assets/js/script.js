@@ -30,6 +30,14 @@ function displayPopup() {
   alert(message);
 }
 
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function(){
   window.addEventListener('scroll', function() {
       if (window.scrollY > 50) {
@@ -44,6 +52,10 @@ document.addEventListener("DOMContentLoaded", function(){
       } 
   });
 }); 
+
+
+
+
 
 
 
@@ -64,6 +76,13 @@ function updateTime() {
   }
 }
 
+
+
+
+
+
+
+
 window.onload = function() {
   updateTime();
   setInterval(updateTime, 5000);
@@ -78,6 +97,12 @@ if (!localStorage.getItem('alertShown')) {
   }
   localStorage.setItem('alertShown', true);
 }
+
+
+
+
+
+
 
 
 

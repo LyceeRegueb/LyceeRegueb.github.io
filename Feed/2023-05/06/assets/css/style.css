@@ -428,3 +428,6 @@ section {
 .blank-space{
   height: 50px;
 }
+.social-icons a.gmaps:hover{
+  background-color:#1ea362
+}

@@ -23,6 +23,7 @@ a {
     cursor: pointer;
     border-radius: 20px;
 }
+
 .hero {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -209,7 +210,7 @@ section {
 }
 .news-h{
   font-size: 60px;
-
+  user-select: none;
   position: relative;
   text-align: center;
 }
@@ -225,7 +226,14 @@ section {
   transform-origin: bottom right;
   transition: transform 0.75s ease-out;
 }
-
+@media(max-width:760px){
+  .news-h{
+    font-size: 20px;
+  }
+  .news-h:after{
+    height: 1px;
+  }
+}
 .news-h:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -255,11 +263,13 @@ section {
   margin-right: 20%;
   transition: all .3s ease-in;
   border-radius: 20px;
+  user-select: none;
 }
 
 .p-svt:hover{
   scale: 1.3;
   border-radius: 20px;
+  user-select: none;
 }
 .blank{
   height: 70px;

@@ -32,6 +32,13 @@ a {
     cursor: pointer;
     border-radius: 20px;
 }
+@media(max-width:760px){
+  .navbar .level-nav-link.nav-link:hover{
+    border-radius: 0px;
+  }
+}
+
+
 .hero {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -543,4 +550,7 @@ word-break: break-word !important;
 }
 .translate{
   display: none;
+}
+.useful-links-headers{
+  text-align: center;
 }

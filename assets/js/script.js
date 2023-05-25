@@ -20,7 +20,7 @@ function countClicks() {
   clickCount++;
   if (clickCount === 20) {
     displayPopup();
-    clickCount = 0; 
+    clickCount = 0;
   }
 }
 
@@ -49,9 +49,9 @@ document.addEventListener("DOMContentLoaded", function(){
         document.getElementById('navbar_top').classList.remove('fixed-top');
 
         document.body.style.paddingTop = '0';
-      } 
+      }
   });
-}); 
+});
 
 
 
@@ -89,7 +89,7 @@ window.onload = function() {
 };
 
 if (!localStorage.getItem('alertShown')) {
- 
+
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     alert("ce site n'est pas vraiment optimisé pour la navigation sur téléphone. nous faisons de notre mieux.");
   } else {
@@ -133,7 +133,7 @@ function translateText(text, targetLanguage) {
     .catch(error => {
       console.error('Translation error:', error);
     });
-} 
+}
 
 
 
@@ -170,11 +170,11 @@ function getLanguageName(languageCode) {
 function translateWebsite(targetLanguage) {
   // Get all the text to be translated on the page (e.g., using DOM selectors)
   var pageText = document.body.innerText;
-  
+
   // Use the translation service API to translate the text to the target language
   // Replace 'API_KEY' with your actual API key or credentials
   var translationServiceURL = 'https://translation-service.com/translate?key=API_KEY&sourceLanguage=auto&targetLanguage=' + targetLanguage;
-  
+
   // Make an API request to translate the text
   fetch(translationServiceURL, {
     method: 'POST',
@@ -187,7 +187,7 @@ function translateWebsite(targetLanguage) {
   .then(data => {
     // Replace the page content with the translated text
     document.body.innerText = data.translatedText;
-    
+
     // Save the selected target language as the default language (e.g., using cookies or local storage)
     // Replace 'selectedLanguage' with your actual storage mechanism
     selectedLanguage = targetLanguage;
@@ -199,3 +199,35 @@ function translateWebsite(targetLanguage) {
     console.error('Translation error:', error);
   });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function onSuccess(googleUser) {
+  console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+}
+function onFailure(error) {
+  console.log(error);
+}
+function renderButton() {
+  gapi.signin2.render('my-signin2', {
+    'scope': 'profile email',
+    'width': 240,
+    'height': 50,
+    'longtitle': true,
+    'theme': 'dark',
+    'onsuccess': onSuccess,
+    'onfailure': onFailure
+  });

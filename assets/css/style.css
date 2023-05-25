@@ -578,6 +578,28 @@ word-break: break-word !important;
 }
 @media(max-width:760px){
   .note-index{
-    display: none
+    display: none;
   }
+}
+.login-box{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+.login-text{
+  margin-top: 20px
+}
+.google-login{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-right: 25%;
+  margin-left: 25%;
+  height: 50px
 }

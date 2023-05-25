@@ -440,3 +440,9 @@ section {
 .social-icons a.gmaps:hover{
   background-color:#1ea362
 }
+.translate{
+  display: none;
+}
+.carousel-inner{
+  border-radius: 20px;
+}

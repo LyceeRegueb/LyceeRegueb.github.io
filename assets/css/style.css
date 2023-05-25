@@ -593,13 +593,9 @@ word-break: break-word !important;
 .login-text{
   margin-top: 20px
 }
-.google-login{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-  border-radius: 20px;
-  margin-right: 25%;
-  margin-left: 25%;
-  height: 50px
+.g_id_signin{
+  margin-left:30% ;
+  margin-top: 20%;
+  margin-right: 30%;
+  margin-bottom: 20%;
 }

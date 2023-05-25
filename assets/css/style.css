@@ -291,7 +291,7 @@ section {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  object-fit: cover; 
+  object-fit: cover;
 }
 .p-img:hover{
   scale: 0.9;
@@ -572,4 +572,12 @@ word-break: break-word !important;
 .useful-links-headers{
   text-align: center;
   margin-top: 20px;
+}
+.pfp{
+  display: none
+}
+@media(max-width:760px){
+  .note-index{
+    display: none
+  }
 }

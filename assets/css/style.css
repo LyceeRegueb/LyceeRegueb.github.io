@@ -587,17 +587,20 @@ word-break: break-word !important;
   align-items: center;
   border: 2px solid black;
   border-radius: 20px;
-  margin-right: 30%;
-  margin-left: 30%;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+}
+@media(max-width:760px){
+  .login-box{
+    width: auto;
+  }
 }
 .login-text{
   margin-top: 20px
 }
 .g_id_signin{
-  margin-left:30% ;
-  margin-top: 20%;
-  margin-right: 30%;
-  margin-bottom: 20%;
+  margin: 30%;
 }
 .round-image {
   width: 50px;

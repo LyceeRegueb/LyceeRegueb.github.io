@@ -268,3 +268,17 @@ var googleUser = {};
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("openNav").style.display = "inline-block";
   }
+
+
+
+
+
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '924759205449859',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v17.0'
+    });
+  };

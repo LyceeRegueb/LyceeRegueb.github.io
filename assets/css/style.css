@@ -599,3 +599,9 @@ word-break: break-word !important;
   margin-right: 30%;
   margin-bottom: 20%;
 }
+.round-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}

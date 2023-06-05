@@ -455,13 +455,30 @@ section {
 .card-text{
   font-size: 25px;
 }
-.big-pic-orient{
+.big-pic-bac{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   border-radius: 20px;
+  transition: all .3s ease-in;
 }
+.big-pic-bac:hover {
+  scale: 1.3;
+  border-radius: 20px;
+}
+@media(max-width:760px){
+  .big-pic-bac{
+    width: 100%;
+    border-radius: 20px;
+    
+  }
+  .big-pic-bac:hover{
+    scale:1;
+    box-shadow: none;
+  }
+}
+
 .card-title{
   font-size: 35px;
 }

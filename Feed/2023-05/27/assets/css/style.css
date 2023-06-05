@@ -12,6 +12,7 @@ a {
 .navbar .level-nav-link.nav-link {
   padding: 28px;
   background-color: #f3f3f3;
+
 }
 .navbar .level-nav-link.nav-link {
     padding-right: var(--primary-padding);
@@ -22,6 +23,11 @@ a {
     color: #f3f3f3;
     cursor: pointer;
     border-radius: 20px;
+}
+@media(max-width:760px){
+  .navbar .level-nav-link.nav-link:hover{
+    border-radius: 0px;
+  }
 }
 
 .hero {

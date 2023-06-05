@@ -112,19 +112,30 @@ section {
   justify-content: center;
   align-items: center;
 }
+.github-article{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.news-article{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 .article {
   text-align: center;
   margin-top: 30px;
   padding: 30px;
   transition: all .2s ease-in;
-  border-radius: 20px;
 }
-.article:hover {
-  scale: 0.9;
-  box-shadow: 0 0 7px 0 var(--primary-color);
-  border-radius: 20px;
-}
+
+
+
+
+
+
 @media(max-width:760px){
+  .article{
+    border-radius: 20px;
+  }
   .article:hover{
     scale: 1;
     box-shadow: none;
@@ -190,7 +201,6 @@ section {
 .article{
   background-color: #f3f3f3;
 }
-
 .dropdown-item:hover{
   background-color: var(--primary-color);
   color: white;
@@ -296,7 +306,6 @@ section {
   object-fit: cover;
 }
 .p-img:hover{
-  scale: 0.9;
   border-radius: 30px;
 }
 .navbar-custom{
@@ -615,4 +624,51 @@ word-break: break-word !important;
 }
 .card-btn{
   margin-top:20px;
+}
+@media (min-width: 768px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
 }

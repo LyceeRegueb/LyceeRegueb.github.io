@@ -446,3 +446,6 @@ section {
 .carousel-inner{
   border-radius: 20px;
 }
+.login-navbar{
+  display: none;
+}

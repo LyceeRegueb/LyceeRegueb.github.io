@@ -258,6 +258,7 @@ section {
   margin-top: 30px;
   transition: all .3s ease-in;
   border-radius: 20px;
+  height: 455px;
 
 }
 .card-img-top{
@@ -608,4 +609,10 @@ word-break: break-word !important;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
+}
+.login-navbar{
+  display: none;
+}
+.card-btn{
+  margin-top:20px;
 }

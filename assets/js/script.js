@@ -282,3 +282,16 @@ var googleUser = {};
       version          : 'v17.0'
     });
   };
+
+
+
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+  

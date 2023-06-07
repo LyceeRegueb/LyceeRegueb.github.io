@@ -406,17 +406,6 @@ word-break: break-word !important;
   text-align: center;
   margin-top: 50px;
 }
-.btc{
-  font-size: 18px;
-  margin-top: 50px;
-  text-align: center;
-}
-.btc-link{
-  text-align: center;
-  margin-top: 20px;
-  cursor: pointer;
-  user-select: none;
-}
 .alert {
   display: none;
   margin-top: 10px;
@@ -671,4 +660,40 @@ word-break: break-word !important;
 .slideIn {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F3F3F3;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #61a1d0;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }

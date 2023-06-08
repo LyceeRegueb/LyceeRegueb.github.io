@@ -2,7 +2,6 @@
 @font-face {
   font-family:'.ArabicUIText';
   src: url('/assets/font/Arabic-Regular.ttf') format('truetype'),
-       url(https://github.com/Ryosuke-420/Arabic-iOS-Font/blob/main/system/fonts/NotoNaskhArabic-Regular.ttf) format('truetype'),
 }
 *{
   font-family: 'Poppins',sans-serif;
@@ -561,9 +560,6 @@ word-break: break-word !important;
 @media(max-width:760px){
   #time{
     display:none;
-  }
-  .navbar-toggler{
-    margin-left: 50%;
   }
 }
 .translate{

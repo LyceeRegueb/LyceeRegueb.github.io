@@ -3,6 +3,9 @@
   font-family:'.ArabicUIText';
   src: url('/assets/font/Arabic-Regular.ttf') format('truetype'),
 }
+html{
+  scroll-behavior: smooth;
+}
 *{
   font-family: 'Poppins',sans-serif;
   

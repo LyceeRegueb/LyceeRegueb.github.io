@@ -25,8 +25,21 @@ a {
     border-radius: 20px;
 }
 @media(max-width:760px){
+  .navbar .level-nav-link.nav-link{
+    text-align: center;
+  }
   .navbar .level-nav-link.nav-link:hover{
-    border-radius: 0px;
+    border-radius: 20px;
+  }
+  .plus-link{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: border-radius 0.3s;
+  }
+  .home-link{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: border-radius 0.3s;
   }
 }
 

@@ -36,21 +36,8 @@ a {
     cursor: pointer;
     border-radius: 20px;
 }
-@media(max-width:760px){
-  .navbar .level-nav-link.nav-link:hover{
-    border-radius: 0px;
-  }
-  .plus-link{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    transition: border-radius 0.3s;
-  }
-  .home-link{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    transition: border-radius 0.3s;
-  }
-}
+
+
 .hero {
   background: linear-gradient(-45deg, #03ebfc, #08004d, #23a6d5, #23d5ab);
   background-size: 400% 400%;

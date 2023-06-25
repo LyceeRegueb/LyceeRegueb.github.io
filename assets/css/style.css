@@ -61,9 +61,11 @@ a {
 @media(max-width:760px){
   .navbar .level-nav-link.nav-link{
     text-align: center;
+    transition: all 0.2s;
   }
   .navbar .level-nav-link.nav-link:hover{
     border-radius: 20px;
+    scale: 1.05;
   }
   .plus-link{
     border-bottom-left-radius: 20px;
@@ -737,3 +739,4 @@ word-break: break-word !important;
   transform: translateY(0);
   opacity: 1;
 }
+

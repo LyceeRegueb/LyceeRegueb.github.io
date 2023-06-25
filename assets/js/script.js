@@ -295,3 +295,49 @@ var googleUser = {};
     });
   });
   
+
+
+
+
+
+
+
+
+
+  let processScroll = () => {
+    let docElem = document.documentElement, 
+      docBody = document.body,
+      scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
+        scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
+      scrollPercent = scrollTop / scrollBottom * 100 + '%';
+    
+    // console.log(scrollTop + ' / ' + scrollBottom + ' / ' + scrollPercent);
+    
+      document.getElementById("progress-bar").style.setProperty("--scrollAmount", scrollPercent);	
+  }
+  
+  document.addEventListener('scroll', processScroll);
+
+
+
+
+
+
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);

@@ -43,7 +43,7 @@ a {
   background: linear-gradient(-45deg, #03ebfc, #08004d, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
+  height: 87vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -317,7 +317,7 @@ section {
   transition: all .2s ease-in;
   cursor: pointer;
   width: 100%;
- 
+  border: #000000 solid 1px;
   height: 450px;
 }
 @media (max-width:760px){
@@ -422,10 +422,7 @@ word-break: break-word !important;
 .h5-g{
   margin-left: 50px;
 }
-.Note-index{
-  text-align: center;
-  margin-top: 50px;
-}
+
 .alert {
   display: none;
   margin-top: 10px;
@@ -739,3 +736,32 @@ word-break: break-word !important;
   opacity: 1;
 }
 
+.Note-index{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px;
+}
+.link {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  
+  text-align: center;
+  margin-top: 10px;
+}
+.link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

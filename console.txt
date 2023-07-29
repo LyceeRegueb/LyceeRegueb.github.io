@@ -1,6 +1,0 @@
-Client id:
-253395359989-2k6j0n7c8chbb19kh8f4iqhlanhltv4m.apps.googleusercontent.com
-client sceret:
-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
-fb app id:
-924759205449859

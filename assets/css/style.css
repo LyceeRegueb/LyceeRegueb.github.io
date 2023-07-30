@@ -715,10 +715,9 @@ word-break: break-word !important;
 }
 #progress-bar {
   --scrollAmount: 0%;
-  
-  background-image: linear-gradient(120deg, #84fab0 0%, #61a1d0 100%);
+  background-image: linear-gradient(120deg, #61a1d0 0%, #61a1d0 100%);
   width: var(--scrollAmount);
-  height: 3px;
+  height: 5px;
   position: fixed;
   bottom: 0;
 }

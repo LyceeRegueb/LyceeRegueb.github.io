@@ -551,7 +551,7 @@ word-break: break-word !important;
   font-size:14px
 }
 .social-icons a.facebook:hover{
-  background-color:#3b5998
+  background-color:#1778F2
 }
 .social-icons a.twitter:hover{
   background-color:#00aced
@@ -743,13 +743,24 @@ word-break: break-word !important;
   margin-top: 100px;
   font-size: 30px;
 }
+@media (max-width:768px) {
+  .Note-index{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
 .link {
   display: inline-block;
   position: relative;
   font-size: 30px;
-  
   text-align: center;
   margin-top: 10px;
+}
+@media (max-width:768px) {
+  .link{
+    font-size: 20px;
+    margin-top: 0px;
+  }
 }
 .link:after {
   content: '';
@@ -772,4 +783,10 @@ word-break: break-word !important;
 }
 .white{
   color: #FFF;
+}
+
+@media (max-width:768px) {
+  .center{
+    text-align: center;
+  }
 }
